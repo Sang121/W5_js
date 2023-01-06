@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1> Calculator</h1>
+        <button onclick="calculate()">Start</button>
+        <script>
+            function calculate(){
+                let amount = prompt("Nhập số tiền:");
+
+                let rate = prompt("Nhập lãi suất (%)");
+
+                let months = prompt("Số tháng phải trả:");
+                const interest = (amount * (rate * 0.01)) / months;
+
+                const total = ((amount / months) + interest).toFixed(2);
+
+
+                alert("EMI: " + total);
+            }
+        </script>
+</body>
+</html>
