@@ -10,7 +10,7 @@
         number = Math.floor(number/2);
     };
 
-    alert(a+" to binary is "+ result)
+    alert(a+" to binary is "+ result.split("").reverse("").join(""))
 }
 
 
